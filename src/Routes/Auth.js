@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Input from "../Components/Input";
 import Button from "../Components/Button";
+import Logo from "../Components/Logo";
+import insta_logo from "../Insta_Logo.png";
 
 const Wrapper = styled.div`
   min-height: 80vh;
@@ -52,6 +54,7 @@ export default () => {
   return (
     <Wrapper>
       <Form>
+        <Logo src={insta_logo} />
         {action === "logIn" ? (
           <form>
             <Input placeholder={"전화번호, 사용자 이름 또는 이메일"} />
